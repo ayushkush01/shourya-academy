@@ -1,43 +1,187 @@
 <!-- 2. Hero Section -->
 <section class="relative pt-32 pb-20 bg-secondary overflow-hidden min-h-[921px] flex items-center">
-<!-- Geometric Triangle Motifs -->
-<div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
-<svg class="w-full h-full text-on-primary-container fill-current" viewbox="0 0 100 100">
-<polygon points="100,0 100,100 0,100"></polygon>
-</svg>
-</div>
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-<div>
-<span class="inline-block py-1 px-4 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-sm tracking-wide mb-6">TRUSTED BY 500+ STUDENTS</span>
-<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-[1.1] tracking-tight mb-6">
-                    Building <span class="text-on-primary-container">Toppers</span> <br/>Since 2017
-                </h1>
-<p class="text-xl text-secondary-fixed opacity-90 mb-10 max-w-lg leading-relaxed">
-                    Comprehensive coaching for Classes 6-12 (CG/CBSE), Navodaya, Sainik School, and Competitive Exams. Shape your future with excellence.
-                </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-gradient-magenta text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-on-primary-container/20 transition-all">Enroll Now</button>
-<button class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-white/10 transition-all flex items-center gap-2">
-                        View Results <span class="material-symbols-outlined">trending_up</span>
-</button>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-on-primary-container/20 rounded-full blur-3xl group-hover:bg-on-primary-container/30 transition-all"></div>
-<img alt="Students at Shourya Academy" class="relative rounded-3xl w-full h-[500px] object-cover shadow-2xl z-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIVUmjQj68LL89-aL2jsXt2GtkYnwLkY7n0iyHA73zw9rYEFy18NNHrjtfm2MEyJwlgMLynPMeb0o57p1wG4HqTa-bwD7HfCZVP8JK0GVcNC0MgHO39dFFEnmeDNG-60ps8xwbi1OFrrMHYJ8rnVprYznxdtjTjaUjKATGAMtNEVEr355CXFTbACc16GgIexZzBtJeSOmapOU8TgFairYgJogLlp2HmV4f8tTcya6DFeji3zoX26aGBpmYfDV4PQHMpOU7OP58IyZZ"/>
-<div class="absolute -bottom-6 -left-6 bg-tertiary-fixed text-on-tertiary-fixed p-6 rounded-2xl shadow-xl z-30">
-<p class="font-headline font-black text-3xl">100+</p>
-<p class="text-sm font-bold opacity-80 uppercase tracking-widest">Rank Holders</p>
-</div>
-</div>
-</div>
-<!-- Stats Strip -->
-<div class="absolute bottom-0 w-full py-6 bg-primary/40 backdrop-blur-sm border-t border-white/5">
-<div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white/80 font-headline font-semibold text-sm md:text-base">
-<span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-primary-container"></span> 500+ Students</span>
-<span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> 8+ Years Experience</span>
-<span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-primary-container"></span> Multiple Branches</span>
-<span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Excellence Guaranteed</span>
-</div>
-</div>
+    <!-- Announcement Marquee Bar -->
+    <div
+        class="absolute top-[76px] md:top-[100px] left-0 w-full bg-white/5 backdrop-blur-sm border-y border-white/10 py-3 z-40 overflow-hidden flex items-center shadow-md">
+        <div
+            class="whitespace-nowrap flex animate-[marquee_27s_linear_infinite] hover:[animation-play-state:paused] pr-16 gap-16 font-headline font-bold text-[13px] tracking-[0.2em] uppercase items-center">
+            <span class="flex items-center gap-2 text-white"><span
+                    class="w-2 h-2 rounded-full bg-green-400 animate-pulse shadow-[0_0_10px_rgba(74,222,128,0.8)]"></span>
+                ADMISSION OPEN 2026-27</span>
+            <span class="text-white/80">✨ LIVE ONLINE & OFFLINE CLASSES</span>
+            <span class="text-tertiary">🏆 REGISTER NOW FOR SCHOLARSHIP TEST</span>
+
+            <!-- Duplicated for seamless scroll -->
+            <span class="flex items-center gap-2 text-white"><span
+                    class="w-2 h-2 rounded-full bg-green-400 animate-pulse shadow-[0_0_10px_rgba(74,222,128,0.8)]"></span>
+                ADMISSION OPEN 2026-27</span>
+            <span class="text-white/80">✨ LIVE ONLINE & OFFLINE CLASSES</span>
+            <span class="text-tertiary">🏆 REGISTER NOW FOR SCHOLARSHIP TEST</span>
+
+            <!-- Duplicated again for wide screens -->
+            <span class="flex items-center gap-2 text-white"><span
+                    class="w-2 h-2 rounded-full bg-green-400 animate-pulse shadow-[0_0_10px_rgba(74,222,128,0.8)]"></span>
+                ADMISSION OPEN 2026-27</span>
+            <span class="text-white/80">✨ LIVE ONLINE & OFFLINE CLASSES</span>
+            <span class="text-tertiary">🏆 REGISTER NOW FOR SCHOLARSHIP TEST</span>
+        </div>
+    </div>
+
+    <!-- Geometric Triangle Motifs -->
+    <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
+        <svg class="w-full h-full text-on-primary-container fill-current" viewbox="0 0 100 100">
+            <polygon points="100,0 100,100 0,100"></polygon>
+        </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
+        style="margin-bottom: 80px;">
+        <div>
+            <span
+                class="inline-block py-1 px-4 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-sm tracking-wide mb-6">TRUSTED
+                BY 500+ STUDENTS</span>
+            <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-[1.1] tracking-tight mb-6">
+                Building <span class="text-on-primary-container">Toppers</span> <br />Since 2017
+            </h1>
+            <p class="text-xl text-secondary-fixed opacity-90 mb-10 max-w-lg leading-relaxed">
+                Comprehensive coaching for Classes 6-12 (CG/CBSE), Navodaya, Sainik School, and Competitive Exams. Shape
+                your future with excellence.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#contact"
+                    class="inline-block bg-gradient-magenta text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-on-primary-container/20 transition-all">Enroll
+                    Now</a>
+                <button
+                    class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-white/10 transition-all flex items-center gap-2">
+                    View Results <span class="material-symbols-outlined">trending_up</span>
+                </button>
+            </div>
+        </div>
+        <div class="relative w-full h-[500px] flex items-center justify-center lg:justify-end">
+            <!-- Decorative abstract background (Glowing Orbs) -->
+            <div
+                class="absolute right-[10%] top-[10%] w-64 h-64 bg-primary-container rounded-full mix-blend-screen filter blur-[80px] opacity-60 animate-pulse pointer-events-none">
+            </div>
+            <div class="absolute right-[30%] bottom-[10%] w-56 h-56 bg-tertiary rounded-full mix-blend-screen filter blur-[80px] opacity-40 animate-pulse pointer-events-none"
+                style="animation-delay: 2s;"></div>
+
+            <!-- Clean, stacked modern cards -->
+            <div class="relative z-20 w-full max-w-md flex flex-col gap-5 pl-4 lg:pl-0">
+
+                <!-- Card 1 -->
+                <div
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:-translate-x-8">
+                    <!-- Glass Shine Effect -->
+                    <div
+                        class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
+                    </div>
+
+                    <div class="flex items-center gap-5 relative z-10">
+                        <div
+                            class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-primary-container to-primary flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-white text-3xl">balance</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-headline font-bold text-xl tracking-wide mb-0.5">Civil Judge /
+                                State PSC</h3>
+                            <p class="text-white/80 text-sm font-medium">Premium Judiciary Coaching</p>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-white/40 ml-auto group-hover:text-white group-hover:translate-x-1 transition-all">arrow_forward_ios</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:translate-x-4">
+                    <div
+                        class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
+                    </div>
+
+                    <div class="flex items-center gap-5 relative z-10">
+                        <div
+                            class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-tertiary to-[#d97706] flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-white text-3xl">school</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-headline font-bold text-xl tracking-wide mb-0.5">6th - 12th
+                                Academic</h3>
+                            <p class="text-white/80 text-sm font-medium">Holistic CG & CBSE Boards</p>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-white/40 ml-auto group-hover:text-white group-hover:translate-x-1 transition-all">arrow_forward_ios</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:translate-x-16">
+                    <div
+                        class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
+                    </div>
+
+                    <div class="flex items-center gap-5 relative z-10">
+                        <div
+                            class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#8c0057] to-magenta-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-white text-3xl">military_tech</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-headline font-bold text-xl tracking-wide mb-0.5">Entrance Exams
+                            </h3>
+                            <p class="text-white/80 text-sm font-medium">Navodaya & Sainik School</p>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-white/40 ml-auto group-hover:text-white group-hover:translate-x-1 transition-all">arrow_forward_ios</span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- Stats Badge - Overlapping -->
+            <div
+                class="absolute -bottom-6 right-6 lg:right-16 bg-white text-secondary p-5 rounded-2xl shadow-2xl z-40 border border-white/50 flex items-center gap-4 lg:hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+                </div>
+                <div>
+                    <p class="font-headline font-black text-3xl leading-none">100<span class="text-primary">+</span></p>
+                    <p class="text-xs font-bold opacity-70 uppercase tracking-widest mt-1">Rank Holders</p>
+                </div>
+            </div>
+
+            <style>
+                @keyframes shimmer {
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-33.33%);
+                    }
+                }
+            </style>
+        </div>
+    </div>
+    <!-- Stats Strip -->
+    <div class="absolute bottom-0 w-full py-6 bg-primary/40 backdrop-blur-sm border-t border-white/5">
+        <div
+            class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white/80 font-headline font-semibold text-sm md:text-base">
+            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-primary-container"></span>
+                500+ Students</span>
+            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> 8+ Years
+                Experience</span>
+            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-primary-container"></span>
+                Multiple Branches</span>
+            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Excellence
+                Guaranteed</span>
+        </div>
+    </div>
 </section>
