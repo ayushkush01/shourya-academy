@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shourya Academy | Elite Academic Success</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-primary-fixed": "#041a3f",
+                "secondary-container": "#feae2c",
+                "on-primary-fixed-variant": "#34466d",
+                "secondary-fixed": "#ffddb4",
+                "on-secondary-container": "#6b4500",
+                "surface-variant": "#e4e2e5",
+                "on-surface-variant": "#44464e",
+                "surface-bright": "#fbf8fc",
+                "secondary": "#835500",
+                "primary-container": "#0a1f44",
+                "error": "#ba1a1a",
+                "surface-dim": "#dbd9dd",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed-variant": "#633f00",
+                "tertiary-fixed": "#d8e4ed",
+                "surface-container-highest": "#e4e2e5",
+                "on-surface": "#1b1b1e",
+                "on-tertiary-fixed": "#121d23",
+                "tertiary-fixed-dim": "#bcc8d1",
+                "tertiary-container": "#172228",
+                "surface-container-lowest": "#ffffff",
+                "surface-container": "#efedf1",
+                "on-tertiary-fixed-variant": "#3d484f",
+                "on-background": "#1b1b1e",
+                "outline": "#75777f",
+                "surface-tint": "#4c5e86",
+                "primary-fixed": "#d9e2ff",
+                "inverse-on-surface": "#f2f0f4",
+                "on-tertiary": "#ffffff",
+                "surface-container-low": "#f5f3f7",
+                "on-primary-container": "#7687b2",
+                "surface": "#fbf8fc",
+                "on-error": "#ffffff",
+                "on-tertiary-container": "#7e8a92",
+                "error-container": "#ffdad6",
+                "primary-fixed-dim": "#b4c6f4",
+                "on-secondary": "#ffffff",
+                "background": "#fbf8fc",
+                "inverse-primary": "#b4c6f4",
+                "outline-variant": "#c5c6cf",
+                "secondary-fixed-dim": "#ffb955",
+                "inverse-surface": "#303033",
+                "on-secondary-fixed": "#291800",
+                "primary": "#00081e",
+                "on-primary": "#ffffff",
+                "tertiary": "#020a10",
+                "surface-container-high": "#e9e7eb"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Noto Serif"],
+                "label": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .glass-nav {
+            background: rgba(251, 248, 252, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FBF8FC]/90 backdrop-blur-xl dark:bg-[#00081E]/90 shadow-[0_4px_32px_rgba(0,8,30,0.06)] h-20">
+<nav class="flex justify-between items-center px-8 h-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#00081E] dark:text-white uppercase tracking-tighter font-headline">
+                Shourya Academy
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#00081E] dark:text-white border-b-2 border-[#FEAE2C] pb-1 font-headline font-medium" href="#">Courses</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#00081E] dark:hover:text-white transition-colors font-headline" href="#">Results</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#00081E] dark:hover:text-white transition-colors font-headline" href="#">Faculty</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#00081E] dark:hover:text-white transition-colors font-headline" href="#">Scholarships</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#00081E] dark:hover:text-white transition-colors font-headline" href="#">About</a>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2.5 rounded-lg font-headline font-bold hover:bg-[#FEAE2C] hover:text-[#00081E] transition-all duration-300 active:scale-95">
+                Enroll Now
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0">
+<img alt="Classroom" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="Modern classroom setting with focused students studying under soft warm lighting, blurred background, academic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNalce-uRDvHp96zhVjnA1iOpkU6aPBEmNhnt91rIwEl_XyEAzrH1QDh06HwgSyByxpF9r-WVWQdtGV1PJRS1A_KL9k10WmSd60wSPuv54az3IPIdnqtp_0ug7mOGcdhVB41aBUF7dN3i7JdQMgSAhvZMGeVptVroLMeXJYMmTVWAQq1KO4hBPgLnAjG9AdxPqdwnC3BpO9XKbZfVRZv41gyc8BiLc8UbSuTiF3O96BYHs6f5xzbQqgsPh99EdGM5JpYq8iqq0lYeq"/>
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-12 w-full editorial-grid">
+<div class="col-span-8">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container/20 text-secondary-container font-headline font-bold text-sm tracking-widest uppercase mb-6">ESTABLISHED 2017</span>
+<h1 class="text-white font-headline font-extrabold text-7xl md:text-8xl leading-[0.9] tracking-tighter mb-8">
+                        Building Toppers <br/> <span class="text-secondary-container">Since 2017</span>
+</h1>
+<p class="text-slate-300 text-xl max-w-xl mb-10 leading-relaxed">
+                        Where discipline meets excellence. We shape the next generation of civil servants, scientists, and industry leaders through rigorous academic mentorship.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-headline font-extrabold text-lg flex items-center gap-2 hover:scale-105 transition-transform">
+                            Join the Elite <span class="material-symbols-outlined">trending_flat</span>
+</button>
+<button class="border border-white/20 text-white px-10 py-4 rounded-xl font-headline font-bold text-lg backdrop-blur-md hover:bg-white/10 transition-colors">
+                            View Courses
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bar (Asymmetric Overlap) -->
+<section class="relative z-20 -mt-16 max-w-screen-xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl p-10 flex justify-between items-center">
+<div class="text-center px-8 border-r border-surface-container">
+<div class="text-primary font-headline font-extrabold text-4xl mb-1">500+</div>
+<div class="text-on-surface-variant font-headline text-xs uppercase tracking-widest font-bold">Students</div>
+</div>
+<div class="text-center px-8 border-r border-surface-container">
+<div class="text-primary font-headline font-extrabold text-4xl mb-1">8+</div>
+<div class="text-on-surface-variant font-headline text-xs uppercase tracking-widest font-bold">Years</div>
+</div>
+<div class="text-center px-8 border-r border-surface-container">
+<div class="text-primary font-headline font-extrabold text-4xl mb-1">3</div>
+<div class="text-on-surface-variant font-headline text-xs uppercase tracking-widest font-bold">Branches</div>
+</div>
+<div class="text-center px-8">
+<div class="text-secondary font-headline font-extrabold text-4xl mb-1">100+</div>
+<div class="text-on-surface-variant font-headline text-xs uppercase tracking-widest font-bold">Toppers</div>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section class="py-32 max-w-screen-2xl mx-auto px-12 editorial-grid items-center">
+<div class="col-span-5 relative">
+<div class="absolute -top-8 -left-8 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<img alt="About" class="rounded-2xl shadow-xl w-full h-[600px] object-cover relative z-10" data-alt="Close up of a prestigious library setting with vintage books and warm lamp light, representing intellectual history and wisdom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3gDYysJaxWGc1RFH7IPKR5Pw8BePEVktx0TulCiK3YLE7s5kU_tLihpcet47kEgkCY2Rs8hCJQFyQF7qaEhCif-gwYxFQQOLNFPz0cBYGvtxAYqlGEdoMgKSPRgp8tQZ3PyzrniFMyBs4xTxePqEszrAzACJApZbzdB1NDmJ0f4E5waFI86irvwF_feUEJsRjKgGONJOa94BZ23X6WN3z4MuDY-3d5EVDoz4uCkZuMsnwXSxSIEhNxys9ASS1ipXB_SPolUXySi5z"/>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl z-20 shadow-xl max-w-[240px]">
+<p class="text-white font-body italic text-lg leading-snug">"Education is the most powerful weapon which you can use to change the world."</p>
+</div>
+</div>
+<div class="col-span-6 col-start-7">
+<h2 class="text-primary font-headline font-extrabold text-5xl mb-8 tracking-tighter">The Legacy of <br/>Shourya Academy</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>Founded in 2017 with a vision to democratize elite coaching, Shourya Academy has grown from a single room to a leading institute for academic and competitive excellence.</p>
+<p>Our journey is defined by the successes of our students—from securing top ranks in board exams to clearing prestigious competitive milestones like the Civil Judge and PSC exams.</p>
+</div>
+<div class="mt-12">
+<a class="text-primary font-headline font-bold text-lg border-b-2 border-secondary-container pb-1 hover:text-secondary transition-colors" href="#">Our Full Story</a>
+</div>
+</div>
+</section>
+<!-- Courses/Programs (Bento Grid) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-primary font-headline font-extrabold text-5xl tracking-tighter mb-4">World-Class Programs</h2>
+<p class="text-on-surface-variant text-xl">Curated pathways for every academic stage.</p>
+</div>
+<button class="bg-primary text-white px-8 py-3 rounded-full font-headline font-bold hover:bg-primary-container transition-colors">View All Programs</button>
+</div>
+<div class="grid grid-cols-12 gap-6 h-[700px]">
+<!-- Main Academic -->
+<div class="col-span-4 bg-surface-container-lowest p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<h3 class="text-primary font-headline font-extrabold text-3xl mb-4">6th - 12th Academic</h3>
+<p class="text-on-surface-variant text-lg">Specialized coaching for Maths, Science, and Commerce with board exam mastery.</p>
+</div>
+<ul class="space-y-3 mt-6">
+<li class="flex items-center gap-2 text-primary font-medium"><span class="material-symbols-outlined text-secondary text-sm" data-weight="fill">check_circle</span> Foundation Courses</li>
+<li class="flex items-center gap-2 text-primary font-medium"><span class="material-symbols-outlined text-secondary text-sm" data-weight="fill">check_circle</span> NCERT Specialist Coaching</li>
+</ul>
+</div>
+<!-- Competitive -->
+<div class="col-span-5 bg-primary p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container/20 blur-3xl rounded-full -mr-20 -mt-20"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">gavel</span>
+</div>
+<h3 class="text-white font-headline font-extrabold text-3xl mb-4">Competitive Excellence</h3>
+<p class="text-slate-300 text-lg">Premier training for Civil Judge, State PSC, and Central Government entrance exams.</p>
+</div>
+<div class="mt-8 flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-white/10 rounded-full text-white text-sm font-medium">Judiciary</span>
+<span class="px-4 py-2 bg-white/10 rounded-full text-white text-sm font-medium">PSC</span>
+<span class="px-4 py-2 bg-white/10 rounded-full text-white text-sm font-medium">SSC</span>
+</div>
+</div>
+</div>
+<!-- Specialized -->
+<div class="col-span-3 bg-surface-container-lowest p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-surface-variant/30">
+<div class="w-16 h-16 bg-surface-container-highest rounded-2xl flex items-center justify-center mb-8 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">shield</span>
+</div>
+<h3 class="text-primary font-headline font-extrabold text-2xl mb-4">Entrance Exams</h3>
+<p class="text-on-surface-variant mb-6">Navodaya and Sainik school entrance preparation for young aspirants.</p>
+<a class="inline-flex items-center text-primary font-bold gap-2 group-hover:gap-4 transition-all" href="#">Enroll Now <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+</div>
+<!-- Skills & Tuition -->
+<div class="col-span-3 bg-surface-container-high p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all">
+<h4 class="text-primary font-headline font-bold text-xl mb-4">Home Tuition</h4>
+<p class="text-on-surface-variant text-sm mb-6">Personalized 1-on-1 mentorship at your doorstep for focused learning.</p>
+<div class="h-1 bg-surface-variant w-full rounded-full"></div>
+</div>
+<div class="col-span-6 bg-[#FEAE2C]/10 border-2 border-dashed border-[#FEAE2C]/30 p-8 rounded-3xl flex items-center justify-between">
+<div>
+<h4 class="text-primary font-headline font-bold text-2xl mb-2">Spoken English &amp; Communication</h4>
+<p class="text-on-surface-variant">Master the art of expression and professional fluency.</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-5xl opacity-40">translate</span>
+</div>
+<div class="col-span-3 bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all flex items-center justify-center text-center">
+<p class="text-primary font-headline font-extrabold text-xl">And more specialized courses...</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements: Hall of Fame -->
+<section class="py-32">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-20">
+<span class="text-secondary font-headline font-bold tracking-[0.2em] uppercase">Hall of Fame</span>
+<h2 class="text-primary font-headline font-extrabold text-6xl mt-4 tracking-tighter">Our Results Speak</h2>
+</div>
+<div class="grid grid-cols-4 gap-8">
+<!-- Achievement Card 1 -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all group">
+<div class="h-80 overflow-hidden relative">
+<img alt="Topper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Portrait of a smiling Indian student holding a book, successful academic achievement, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi9AhG5DPNpiDY0r3Xvy25l-IbIZnDygJAzxdPMx1B_f6SrYk5kWQVE3tl5ddw3uuOu4dsvhSP48aBveLGj0Q51EPh368SEAE0ELQcdshsqLhONoclHGO22mtqOY5R-ojN_Q9Ts3jLvwchPh-95273DkmN8pVces0DoX6R2JtW0tpkL7zTznRReVs_6pDklxEYMjDm-rrWD2xDUfgLVkoZzY1JJMpzLKKTIh8kzdFj8m50ChJg5s-Mt4vXbEeXG5spwPINJ5dJ-lJr"/>
+<div class="absolute top-4 left-4 bg-secondary-container px-3 py-1 rounded-full text-on-secondary-container text-xs font-bold font-headline">98.2% CBSE</div>
+</div>
+<div class="p-6">
+<h4 class="text-primary font-headline font-bold text-xl mb-1">Ananya Sharma</h4>
+<p class="text-on-surface-variant text-sm mb-4">Class 12th Board Topper</p>
+<div class="p-4 bg-surface-container-low rounded-xl italic text-on-surface-variant text-sm">
+                                "The disciplined environment at Shourya Academy was the key to my success."
+                            </div>
+</div>
+</div>
+<!-- Achievement Card 2 -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all group">
+<div class="h-80 overflow-hidden relative">
+<img alt="Topper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Young professional man in formal attire, confident expression, representing civil service success" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-86V6NzzkUOvOejLyX0RjfhDPJpHkJS9vwS7SoHT72y9bpDBdQ7lJ-DBHao3cgjLNpE7biY_EbTOANG9sNTmxRTr32dvbFO2Zr1sqbMzmnHIbMibLKOD_cH7UbNTm_UQluIIiaUGHNsdheJCRe8xnL_L0RuAzPAnLa80eCgcs7ZLDr0foHgjyCD43MEWuzsm1e_MAUpgEsOiiEsTnfV121MCF4qDwTYvelHNGTeKo_pD-tF_Xe81ykRClC_uDySfDVis492zhHUn"/>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 rounded-full text-white text-xs font-bold font-headline">Civil Judge Select</div>
+</div>
+<div class="p-6">
+<h4 class="text-primary font-headline font-bold text-xl mb-1">Vikram Singh</h4>
+<p class="text-on-surface-variant text-sm mb-4">State Judiciary Exam</p>
+<div class="p-4 bg-surface-container-low rounded-xl italic text-on-surface-variant text-sm">
+                                "The mentorship for law subjects is unparalleled in the entire region."
+                            </div>
+</div>
+</div>
+<!-- Card 3 & 4 placeholder logic -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all group">
+<div class="h-80 overflow-hidden relative">
+<img alt="Topper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Group of students celebrating graduation with high fives, vibrant energy, academic success" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlqgB1n0t2YgNuwKxLuD8JLFf6hQxuUUr0duPqirbWbyJOvxcdquX6JfN7LZcKnK8YRrHmzpOtVLpZ6ohwTjb30rX5VILTJoo4HTYaFTt3CT4eZOqie_tI2df9FMtyA9NB5g01Aer0LmxEqPLxZ0XUPdxCYpRL4XWz0tAjXAviFk_OKMfIC795nQEnb5JOBVdo92mMbKOWXkqCdpG_vTvtjm1I-no8jeSjiRb0w5qWGfp-hx9s7QytP46ZjCWfMWbT8Zkj6VaK98iH"/>
+<div class="absolute top-4 left-4 bg-secondary-container px-3 py-1 rounded-full text-on-secondary-container text-xs font-bold font-headline">Sainik School Select</div>
+</div>
+<div class="p-6">
+<h4 class="text-primary font-headline font-bold text-xl mb-1">Rohan Deshmukh</h4>
+<p class="text-on-surface-variant text-sm mb-4">Entrance Exams</p>
+<div class="p-4 bg-surface-container-low rounded-xl italic text-on-surface-variant text-sm">
+                                "The specific focus on entrance patterns helped me crack Sainik school in first attempt."
+                            </div>
+</div>
+</div>
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all group">
+<div class="h-80 overflow-hidden relative">
+<img alt="Topper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up portrait of a young girl student in school uniform, bright and hopeful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_fn7R7X9LOQAe45NIQRmVQsPjhQQbJIEORJbnyin34LHyEHlQDKOf0hwQvFH6JrfBauCo2SejLFFrcQiyc_9pW3PrBT_KmIIrKtGmQxxWcJ2awYC3lQYz_g0GLGdL_yDgaBz-FYIwPcDwjYPBMhfwzDY_032wtgFYt7T_kkv7eD-1K0ESZrXNX6_5kdWdvcjpSPYsh_SxvU4Y8Q8Tec6cvgNKLUnxpugMzSeIbmOvJyFg-pPu0nDSVMj0C14QIS5JFEKZ2LwTB8WW"/>
+<div class="absolute top-4 left-4 bg-secondary-container px-3 py-1 rounded-full text-on-secondary-container text-xs font-bold font-headline">96.5% ICSE</div>
+</div>
+<div class="p-6">
+<h4 class="text-primary font-headline font-bold text-xl mb-1">Ishani Pal</h4>
+<p class="text-on-surface-variant text-sm mb-4">Class 10th Board Topper</p>
+<div class="p-4 bg-surface-container-low rounded-xl italic text-on-surface-variant text-sm">
+                                "Weekly tests and detailed analysis helped me identify my weak spots early."
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-32 bg-primary overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-12 editorial-grid">
+<div class="col-span-4">
+<h2 class="text-white font-headline font-extrabold text-5xl mb-8 tracking-tighter">The Shourya <br/><span class="text-secondary-container">Advantage</span></h2>
+<p class="text-slate-400 text-lg mb-12">We don't just teach subjects; we build disciplines that last a lifetime.</p>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="text-secondary-container bg-white/5 p-3 rounded-xl">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold text-xl mb-2">Expert Faculty</h4>
+<p class="text-slate-400">Subject matter experts with over 15+ years of combined experience.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="text-secondary-container bg-white/5 p-3 rounded-xl">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold text-xl mb-2">Proven Results</h4>
+<p class="text-slate-400">Consistent track record of toppers in boards and competitive exams.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-7 col-start-6 relative">
+<div class="grid grid-cols-2 gap-6 relative z-10">
+<div class="bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 mt-12">
+<h4 class="text-white font-headline font-bold text-2xl mb-4">Disciplined Environment</h4>
+<p class="text-slate-400">A strict yet supportive atmosphere that fosters academic focus and habit building.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10">
+<h4 class="text-white font-headline font-bold text-2xl mb-4">Smart Technology</h4>
+<p class="text-slate-400">Integration of digital tools for interactive learning and periodic performance tracking.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 mt-12">
+<h4 class="text-white font-headline font-bold text-2xl mb-4">Regular Assessments</h4>
+<p class="text-slate-400">Weekly tests modeled after actual exam patterns to build confidence and speed.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10">
+<h4 class="text-white font-headline font-bold text-2xl mb-4">Personal Mentorship</h4>
+<p class="text-slate-400">Individual attention given to every student to address unique learning hurdles.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32">
+<div class="max-w-screen-xl mx-auto px-12">
+<div class="editorial-grid">
+<div class="col-span-4">
+<span class="text-secondary font-headline font-bold">COMMUNITY VOICES</span>
+<h2 class="text-primary font-headline font-extrabold text-5xl mt-4 mb-8">What Parents &amp; Students Say</h2>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-surface-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-surface-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="col-span-8 flex gap-8 overflow-hidden">
+<div class="min-w-[450px] bg-surface-container-low p-12 rounded-3xl">
+<div class="flex gap-1 text-secondary-container mb-6">
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+</div>
+<p class="text-primary font-body text-xl italic leading-relaxed mb-8">"Choosing Shourya Academy for my daughter was the best decision. Her performance in Mathematics improved significantly within three months."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest"></div>
+<div>
+<div class="font-headline font-bold text-primary">Mrs. Geeta Patel</div>
+<div class="text-on-surface-variant text-sm">Parent of Class 10th Student</div>
+</div>
+</div>
+</div>
+<div class="min-w-[450px] bg-surface-container p-12 rounded-3xl">
+<div class="flex gap-1 text-secondary-container mb-6">
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-weight="fill">star</span>
+</div>
+<p class="text-primary font-body text-xl italic leading-relaxed mb-8">"The Civil Judge coaching is very professional. The study material is concise and the mock interviews are extremely helpful for confidence."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest"></div>
+<div>
+<div class="font-headline font-bold text-primary">Amit K. Verma</div>
+<div class="text-on-surface-variant text-sm">Aspirant (Law)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Branches -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<h2 class="text-primary font-headline font-extrabold text-5xl mb-16 text-center tracking-tighter">Find Us Near You</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Branch Card 1 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm flex h-80">
+<div class="w-1/2 overflow-hidden">
+<img alt="Branch" class="w-full h-full object-cover" data-alt="Modern academic building exterior with clean architecture and greenery, representative of a premium learning institute branch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6OLRZg7q33hvvZQwvtJh_g_dQbZMkZCrG4QfR-VBvjW5xrF0rTREB9C_y4BrdzorXD0xu9E3BGakvv5TO5hvmPXINx3Ob9tEAnnI8ARpTFxuIrnnpXco-12x34ydwPsqW88UTRWcIBKgt9kMq0KBknOIJxd7hIjB5X7fVxf_IYqPpHErAh4rAnEYAYnndZUA3wq4Du9UrXQGddT0o_Rrq2ie2TfTIME1Qx_PdAX2RTaDK_yx8vFUAiPbKAEB3PEcyLXTT3gAbJDbB"/>
+</div>
+<div class="w-1/2 p-8 flex flex-col justify-between">
+<div>
+<h3 class="text-primary font-headline font-extrabold text-2xl mb-2">Uslapur Main Branch</h3>
+<p class="text-on-surface-variant text-sm mb-4">Near Railway Crossing, Uslapur, Bilaspur, Chhattisgarh.</p>
+<div class="flex items-center gap-2 text-primary text-sm font-bold">
+<span class="material-symbols-outlined text-secondary">call</span> +91 98765 43210
+                                </div>
+</div>
+<button class="w-full border border-primary text-primary py-3 rounded-xl font-headline font-bold hover:bg-primary hover:text-white transition-colors">Get Directions</button>
+</div>
+</div>
+<!-- Branch Card 2 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm flex h-80">
+<div class="w-1/2 overflow-hidden">
+<div class="bg-surface-container-highest w-full h-full flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-variant text-6xl">map</span>
+</div>
+</div>
+<div class="w-1/2 p-8 flex flex-col justify-between">
+<div>
+<h3 class="text-primary font-headline font-extrabold text-2xl mb-2">City Center Hub</h3>
+<p class="text-on-surface-variant text-sm mb-4">2nd Floor, Merit Plaza, Vyapar Vihar, Bilaspur.</p>
+<div class="flex items-center gap-2 text-primary text-sm font-bold">
+<span class="material-symbols-outlined text-secondary">call</span> +91 98765 43211
+                                </div>
+</div>
+<button class="w-full border border-primary text-primary py-3 rounded-xl font-headline font-bold hover:bg-primary hover:text-white transition-colors">Get Directions</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact/Enroll Section -->
+<section class="py-32">
+<div class="max-w-screen-xl mx-auto px-12 editorial-grid">
+<div class="col-span-5">
+<h2 class="text-primary font-headline font-extrabold text-5xl mb-6 tracking-tighter">Begin Your Journey <br/>Towards Excellence</h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed">Have questions? Our academic counselors are here to help you choose the right path for your future success.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<div class="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<div class="text-primary font-bold">Chat on WhatsApp</div>
+<div class="text-on-surface-variant text-sm">Instant support for admission queries</div>
+</div>
+</a>
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-low">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<div class="text-primary font-bold">Email Us</div>
+<div class="text-on-surface-variant text-sm">info@shouryaacademy.com</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-6 col-start-7">
+<form class="bg-white p-10 rounded-3xl shadow-xl space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-primary font-headline font-bold text-sm ml-1">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-0 focus:ring-2 focus:ring-primary/40 rounded-xl p-4" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-primary font-headline font-bold text-sm ml-1">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border-0 focus:ring-2 focus:ring-primary/40 rounded-xl p-4" placeholder="+91 00000 00000" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-primary font-headline font-bold text-sm ml-1">Interested Course</label>
+<select class="w-full bg-surface-container-lowest border-0 focus:ring-2 focus:ring-primary/40 rounded-xl p-4 appearance-none">
+<option>Select a course</option>
+<option>6th-12th Academic</option>
+<option>Civil Judge / PSC</option>
+<option>Entrance Exams (Sainik/Navodaya)</option>
+<option>Spoken English</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-primary font-headline font-bold text-sm ml-1">Your Message</label>
+<textarea class="w-full bg-surface-container-lowest border-0 focus:ring-2 focus:ring-primary/40 rounded-xl p-4" placeholder="Tell us how we can help you..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-headline font-extrabold py-5 rounded-2xl hover:bg-on-secondary-container transition-colors text-lg shadow-lg shadow-secondary/20">Send Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#00081E] text-[#FEAE2C] border-t-0 font-body leading-relaxed text-body-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-extrabold text-[#FEAE2C] tracking-tight font-headline">SHOURYA ACADEMY</div>
+<p class="text-slate-400 text-base">Elite academic coaching institution dedicated to discipline, excellence, and the relentless pursuit of student success since 2017.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#FEAE2C] hover:text-[#00081E] transition-all" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#FEAE2C] hover:text-[#00081E] transition-all" href="#"><span class="material-symbols-outlined text-xl">camera_alt</span></a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-headline font-bold uppercase tracking-widest text-sm">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Campus Tour</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Alumni Network</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-headline font-bold uppercase tracking-widest text-sm">Courses</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">State PSC Coaching</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Civil Judge Exams</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Board Excellence</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="#">Sainik Entrance</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-headline font-bold uppercase tracking-widest text-sm">Headquarters</h4>
+<p class="text-slate-400 text-base">Uslapur Main Road,<br/>Bilaspur, Chhattisgarh<br/>495001</p>
+<div class="pt-4">
+<p class="text-white font-bold">Contact Support</p>
+<p class="text-[#FEAE2C]">support@shouryaacademy.com</p>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center opacity-80 hover:opacity-100 transition-opacity">
+<p class="text-slate-400 text-sm">© 2024 Shourya Academy. Built for Elite Academic Success.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="text-slate-400 text-sm hover:text-white" href="#">Legal</a>
+<a class="text-slate-400 text-sm hover:text-white" href="#">Sitemap</a>
+<a class="text-slate-400 text-sm hover:text-white" href="#">Security</a>
+</div>
+</div>
+</footer>
+</body></html>
