@@ -8,111 +8,107 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Course Cards -->
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
+            <div *ngFor="let course of courses"
+                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container flex flex-col h-full">
                 <div
-                    class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-secondary">school</span>
+                    class="w-12 h-12 {{course.bgClass}} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined {{course.textClass}}">{{course.icon}}</span>
                 </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Classes 6-12</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Subject expertise for CG &amp; CBSE
-                    boards with focus on fundamental concepts.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-on-tertiary-fixed-variant">military_tech</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Navodaya &amp; Sainik</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Specialized entrance coaching for
-                    prestigious government schools.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-on-primary-fixed-variant">record_voice_over</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Spoken English</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Master fluency and confidence with our
-                    structured communication modules.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-secondary">balance</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Civil Judge</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Expert legal mentorship for judicial
-                    services exams preparation.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-on-tertiary-fixed-variant">history_edu</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">PSC / Vyapam</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Targeted strategies for Chhattisgarh
-                    state competitive examinations.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-on-primary-fixed-variant">account_balance</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Banking / SSC</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Fast-track methods and mock tests for
-                    Central government jobs.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-secondary">house</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Home Tuition</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Personalized one-on-one attention at the
-                    comfort of your home.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
-            </div>
-            <div
-                class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-transparent hover:border-on-primary-container">
-                <div
-                    class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-on-tertiary-fixed-variant">auto_stories</span>
-                </div>
-                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">Custom Courses</h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Contact us for tailored coaching
-                    solutions for specific needs.</p>
-                <span
-                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer">Learn
-                    More <span class="material-symbols-outlined text-xs">arrow_forward_ios</span></span>
+                <h4 class="font-headline font-extrabold text-secondary text-xl mb-3">{{course.title}}</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">{{course.shortDesc}}</p>
+                <span (click)="openModal(course)"
+                    class="text-on-primary-container font-headline font-bold text-sm flex items-center gap-2 cursor-pointer mt-auto w-fit hover:opacity-80 transition-opacity">Learn
+                    More <span
+                        class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward_ios</span></span>
             </div>
         </div>
+
+        <!-- Course Details Modal -->
+        <div *ngIf="selectedCourse" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+            <!-- Backdrop -->
+            <div class="absolute inset-0 bg-secondary/60 backdrop-blur-md transition-opacity" (click)="closeModal()">
+            </div>
+
+            <!-- Modal Content -->
+            <div
+                class="relative bg-surface-container-lowest w-full max-w-2xl rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] overflow-hidden transform transition-all animate-[slideIn_0.3s_ease-out]">
+                <!-- Decorative Header Background -->
+                <div class="absolute top-0 left-0 w-full h-40 {{selectedCourse.bgClass}} opacity-30"></div>
+
+                <!-- Close Button -->
+                <button (click)="closeModal()"
+                    class="absolute top-5 right-5 w-10 h-10 bg-white hover:bg-gray-100 rounded-full flex items-center justify-center z-20 shadow-md transition-all hover:rotate-90">
+                    <span class="material-symbols-outlined text-secondary">close</span>
+                </button>
+
+                <div class="p-8 sm:p-10 relative z-10">
+                    <!-- Header -->
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-6 mb-8 mt-2">
+                        <div
+                            class="w-24 h-24 {{selectedCourse.bgClass}} rounded-2xl flex items-center justify-center shadow-lg shrink-0">
+                            <span
+                                class="material-symbols-outlined {{selectedCourse.textClass}} text-[48px]">{{selectedCourse.icon}}</span>
+                        </div>
+                        <div>
+                            <span
+                                class="inline-block px-3 py-1 rounded-full {{selectedCourse.bgClass}} {{selectedCourse.textClass}} text-xs font-bold uppercase tracking-widest mb-3">
+                                Program Overview
+                            </span>
+                            <h3 class="font-headline font-black text-3xl sm:text-4xl text-secondary mb-1">
+                                {{selectedCourse.title}}</h3>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="mb-8">
+                        <h4 class="font-headline font-bold text-lg text-secondary mb-3 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-on-primary-container">info</span> About this
+                            Course
+                        </h4>
+                        <p class="text-on-surface-variant leading-relaxed text-lg">{{selectedCourse.details}}</p>
+                    </div>
+
+                    <!-- Features/Highlights -->
+                    <div class="bg-surface-container-low p-6 sm:p-8 rounded-2xl border border-secondary/5">
+                        <h4 class="font-headline font-bold text-lg text-secondary mb-5 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-on-primary-container">star</span> Key Highlights
+                        </h4>
+                        <ul class="space-y-4">
+                            <li *ngFor="let feature of selectedCourse.features" class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded-full {{selectedCourse.bgClass}} flex items-center justify-center shrink-0 mt-0.5">
+                                    <span
+                                        class="material-symbols-outlined {{selectedCourse.textClass}} text-[18px]">check</span>
+                                </div>
+                                <span class="text-secondary font-medium text-lg leading-tight pt-1">{{feature}}</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Action -->
+                    <div class="mt-10 flex justify-end">
+                        <a href="#contact" (click)="closeModal()"
+                            class="bg-gradient-magenta text-white px-10 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-xl hover:-translate-y-1 hover:shadow-on-primary-container/30 transition-all flex items-center gap-2">
+                            Enroll in Course <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes slideIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px) scale(0.95);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+        </style>
     </div>
 </section>
 <!-- 5. Achievements/Results -->
@@ -307,15 +303,79 @@
                 class="bg-primary/30 p-2 rounded-2xl border border-white/5 group hover:-translate-y-2 transition-transform duration-300 min-w-[280px] md:min-w-[320px] snap-center shrink-0">
                 <img alt="Ranker 2"
                     class="w-full h-64 object-cover rounded-xl mb-6 transition-transform duration-500 group-hover:scale-105"
-                    src="../../../assets/sighrat.jpeg" />
+                    src="../../../assets/jyoti-s.jpeg" />
+                <div class="p-4 text-center">
+                    <div class="inline-flex items-center gap-1 text-tertiary mb-2">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="font-headline font-black text-lg">Selected</span>
+                    </div>
+                    <h4 class="font-headline font-extrabold text-xl mb-1">Jyoti Sharma</h4>
+                    <p class="text-secondary-fixed text-sm font-bold opacity-70">Civil Judge 2024</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-primary/30 p-2 rounded-2xl border border-white/5 group hover:-translate-y-2 transition-transform duration-300 min-w-[280px] md:min-w-[320px] snap-center shrink-0">
+                <img alt="Ranker 2"
+                    class="w-full h-64 object-cover rounded-xl mb-6 transition-transform duration-500 group-hover:scale-105"
+                    src="../../../assets/sounak-v.jpeg" />
+                <div class="p-4 text-center">
+                    <div class="inline-flex items-center gap-1 text-tertiary mb-2">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="font-headline font-black text-lg">Selected</span>
+                    </div>
+                    <h4 class="font-headline font-extrabold text-xl mb-1">Sounak Verma</h4>
+                    <p class="text-secondary-fixed text-sm font-bold opacity-70">Civil Judge 2024</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-primary/30 p-2 rounded-2xl border border-white/5 group hover:-translate-y-2 transition-transform duration-300 min-w-[280px] md:min-w-[320px] snap-center shrink-0">
+                <img alt="Ranker 2"
+                    class="w-full h-64 object-cover rounded-xl mb-6 transition-transform duration-500 group-hover:scale-105"
+                    src="../../../assets/harshita-a.jpeg" />
+                <div class="p-4 text-center">
+                    <div class="inline-flex items-center gap-1 text-tertiary mb-2">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="font-headline font-black text-lg">Selected</span>
+                    </div>
+                    <h4 class="font-headline font-extrabold text-xl mb-1">Hrishita Agrawal</h4>
+                    <p class="text-secondary-fixed text-sm font-bold opacity-70">Civil Judge 2024</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-primary/30 p-2 rounded-2xl border border-white/5 group hover:-translate-y-2 transition-transform duration-300 min-w-[280px] md:min-w-[320px] snap-center shrink-0">
+                <img alt="Ranker 2"
+                    class="w-full h-64 object-cover rounded-xl mb-6 transition-transform duration-500 group-hover:scale-105"
+                    src="../../../assets/kushi.jpeg" />
                 <div class="p-4 text-center">
                     <div class="inline-flex items-center gap-1 text-tertiary mb-2">
                         <span class="material-symbols-outlined text-sm"
                             style="font-variation-settings: 'FILL' 1;">star</span>
                         <span class="font-headline font-black text-lg">92%</span>
                     </div>
-                    <h4 class="font-headline font-extrabold text-xl mb-1">Divya Singh Rathore</h4>
-                    <p class="text-secondary-fixed text-sm font-bold opacity-70">Class - 10th</p>
+                    <h4 class="font-headline font-extrabold text-xl mb-1">Khushi</h4>
+                    <p class="text-secondary-fixed text-sm font-bold opacity-70">Class -9th (84%)</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-primary/30 p-2 rounded-2xl border border-white/5 group hover:-translate-y-2 transition-transform duration-300 min-w-[280px] md:min-w-[320px] snap-center shrink-0">
+                <img alt="Ranker 2"
+                    class="w-full h-64 object-cover rounded-xl mb-6 transition-transform duration-500 group-hover:scale-105"
+                    src="../../../assets/vaibhav-yadav.jpeg" />
+                <div class="p-4 text-center">
+                    <div class="inline-flex items-center gap-1 text-tertiary mb-2">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="font-headline font-black text-lg">92%</span>
+                    </div>
+                    <h4 class="font-headline font-extrabold text-xl mb-1">Vaibhav Yadav</h4>
+                    <p class="text-secondary-fixed text-sm font-bold opacity-70">Class -9th (89%)</p>
                 </div>
             </div>
         </div>
