@@ -7,18 +7,24 @@
       <span class="font-headline">Shourya Academy</span>
     </div>
     <div class="hidden md:flex items-center gap-8">
-      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1"
-        href="#">Home</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight text-[#1C2B6E] hover:text-[#ff5bb0] transition-colors"
-        href="#about">About</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight text-[#1C2B6E] hover:text-[#ff5bb0] transition-colors"
-        href="#courses">Courses</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight text-[#1C2B6E] hover:text-[#ff5bb0] transition-colors"
-        href="#results">Results</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight text-[#1C2B6E] hover:text-[#ff5bb0] transition-colors"
-        href="#gallery">Gallery</a>
-      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight text-[#1C2B6E] hover:text-[#ff5bb0] transition-colors"
-        href="#contact">Contact</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight transition-colors"
+        [ngClass]="activeSection === 'home' ? 'text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1' : 'text-[#1C2B6E] hover:text-[#ff5bb0] pb-1 border-b-2 border-transparent'"
+        (click)="activeSection = 'home'" href="#">Home</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight transition-colors"
+        [ngClass]="activeSection === 'about' ? 'text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1' : 'text-[#1C2B6E] hover:text-[#ff5bb0] pb-1 border-b-2 border-transparent'"
+        (click)="activeSection = 'about'" href="#about">About</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight transition-colors"
+        [ngClass]="activeSection === 'courses' ? 'text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1' : 'text-[#1C2B6E] hover:text-[#ff5bb0] pb-1 border-b-2 border-transparent'"
+        (click)="activeSection = 'courses'" href="#courses">Courses</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight transition-colors"
+        [ngClass]="activeSection === 'results' ? 'text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1' : 'text-[#1C2B6E] hover:text-[#ff5bb0] pb-1 border-b-2 border-transparent'"
+        (click)="activeSection = 'results'" href="#results">Results</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight transition-colors"
+        [ngClass]="activeSection === 'gallery' ? 'text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1' : 'text-[#1C2B6E] hover:text-[#ff5bb0] pb-1 border-b-2 border-transparent'"
+        (click)="activeSection = 'gallery'" href="#gallery">Gallery</a>
+      <a class="font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight transition-colors"
+        [ngClass]="activeSection === 'contact' ? 'text-[#ff5bb0] border-b-2 border-[#ff5bb0] pb-1' : 'text-[#1C2B6E] hover:text-[#ff5bb0] pb-1 border-b-2 border-transparent'"
+        (click)="activeSection = 'contact'" href="#contact">Contact</a>
     </div>
     <a href="#contact"
       class="inline-block bg-[#ff5bb0] text-white px-6 py-2.5 rounded-xl font-headline font-bold text-sm hover:opacity-90 transition-all duration-300 scale-95 active:scale-90">Enroll
