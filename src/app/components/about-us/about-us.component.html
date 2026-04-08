@@ -1,57 +1,89 @@
 <!-- 3. About Us -->
-<section class="py-24 bg-surface-container-lowest relative overflow-hidden" id="about">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<section class="py-28 bg-surface-container-lowest relative overflow-hidden" id="about">
+
+    <!-- Subtle background blobs -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-on-primary-container/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-tertiary/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-[1400px] mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+
+        <!-- LEFT: Clean Image (no overlays) -->
         <div class="relative">
-            <div
-                class="absolute -top-4 -left-4 w-full h-full border-4 border-on-primary-container rounded-xl translate-x-2 translate-y-2">
-            </div>
-            <img alt="Academy Building" class="relative rounded-xl w-full h-[450px] object-cover shadow-lg"
-                src="../../../assets/building-fix.jpeg" />
+            <div class="absolute -top-3 -left-3 w-full h-full border-4 border-on-primary-container/40 rounded-2xl"></div>
+            <img
+                alt="Shourya Academy Building"
+                class="relative rounded-2xl w-full h-[480px] object-cover shadow-2xl"
+                src="../../../assets/building-fix.jpeg"
+            />
         </div>
-        <div>
-            <h2 class="text-on-primary-container font-headline font-black text-xl mb-4 tracking-widest uppercase">Who We
-                Are</h2>
-            <div class="mb-8">
-                <h3 class="text-4xl md:text-5xl font-headline font-extrabold text-secondary mb-6 leading-tight">
-                    Empowering Minds with Academic Integrity</h3>
-                <p class="text-3xl text-tertiary font-headline font-bold mb-8 italic"
-                    style="font-family: 'Poppins', sans-serif;">“यतो धर्मस्ततो जयः”</p>
-                <p class="text-on-surface-variant text-lg leading-relaxed mb-8">Founded in 2017, Shourya Academy has
-                    emerged as a lighthouse of knowledge in Bilaspur. We don't just teach syllabus; we architect careers
-                    through discipline, passion, and proven pedagogical methods.</p>
-            </div>
-            <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                    <div class="bg-secondary-container p-3 rounded-lg">
-                        <span class="material-symbols-outlined text-secondary">verified</span>
-                    </div>
-                    <div>
-                        <h4 class="font-headline font-bold text-secondary text-lg">Quality Education</h4>
-                        <p class="text-on-surface-variant">Structured curriculum aligned with latest board patterns and
-                            competitive exam standards.</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div class="bg-tertiary-fixed p-3 rounded-lg">
-                        <span class="material-symbols-outlined text-on-tertiary-fixed-variant">trending_up</span>
-                    </div>
-                    <div>
-                        <h4 class="font-headline font-bold text-secondary text-lg">Proven Results</h4>
-                        <p class="text-on-surface-variant">Consistent track record of toppers in CG/CBSE Boards and
-                            state-level entrance tests.</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div class="bg-primary-fixed p-3 rounded-lg">
-                        <span class="material-symbols-outlined text-on-primary-fixed-variant">psychology</span>
-                    </div>
-                    <div>
-                        <h4 class="font-headline font-bold text-secondary text-lg">Personality Development</h4>
-                        <p class="text-on-surface-variant">Focus on confidence, communication, and ethical values for
-                            holistic growth.</p>
-                    </div>
+
+        <!-- RIGHT: Content -->
+        <div class="flex flex-col gap-7">
+
+            <!-- Label -->
+            <span class="text-on-primary-container font-headline font-black text-sm tracking-[0.25em] uppercase">Who We Are</span>
+
+            <!-- Headline -->
+            <div>
+                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-secondary leading-tight mb-5">
+                    Empowering Minds<br>with Academic Integrity
+                </h2>
+                <!-- Sanskrit quote pill -->
+                <div class="inline-flex items-center gap-2 bg-tertiary/10 border border-tertiary/30 rounded-xl px-5 py-3">
+                    <span class="material-symbols-outlined text-tertiary text-lg">auto_stories</span>
+                    <p class="text-tertiary font-bold italic text-lg" style="font-family: 'Poppins', sans-serif;">"यतो धर्मस्ततो जयः"</p>
                 </div>
             </div>
+
+            <!-- Description -->
+            <p class="text-on-surface-variant text-lg leading-relaxed">
+                Founded in 2017, Shourya Academy has emerged as a <span class="font-semibold text-secondary">lighthouse of knowledge</span> in Bilaspur, Chhattisgarh. We architect careers through discipline, passion, and proven pedagogical methods.
+            </p>
+
+            <!-- Animated Stats Row -->
+            <div class="grid grid-cols-3 gap-4">
+                <div *ngFor="let stat of stats; let i = index"
+                    class="rounded-2xl p-4 text-center border transition-all"
+                    [ngClass]="i === 1
+                        ? 'bg-secondary border-transparent'
+                        : 'bg-surface-container border-outline-variant/10'">
+                    <p class="font-headline font-black text-3xl leading-none"
+                        [ngClass]="i === 1 ? 'text-white' : 'text-secondary'">
+                        {{ stat.current }}<span [ngClass]="i === 1 ? 'text-on-primary-container' : 'text-on-primary-container'">{{ stat.suffix }}</span>
+                    </p>
+                    <p class="text-xs font-bold uppercase tracking-widest mt-2"
+                        [ngClass]="i === 1 ? 'text-white/60' : 'text-on-surface-variant'">
+                        {{ stat.label }}
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature list — single line each -->
+            <div class="space-y-3">
+
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 shrink-0 rounded-xl bg-gradient-to-br from-primary-container to-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-lg">verified</span>
+                    </div>
+                    <p class="font-headline font-bold text-secondary">Quality Education — Aligned with latest board & exam patterns</p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 shrink-0 rounded-xl bg-gradient-to-br from-tertiary to-[#d97706] flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-lg">trending_up</span>
+                    </div>
+                    <p class="font-headline font-bold text-secondary">Proven Results — Consistent toppers in Boards & state exams</p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 shrink-0 rounded-xl bg-gradient-to-br from-[#8c0057] to-[#ff5bb0] flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-lg">psychology</span>
+                    </div>
+                    <p class="font-headline font-bold text-secondary">Personality Development — Confidence, communication & ethics</p>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </section>

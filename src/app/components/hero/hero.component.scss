@@ -1,0 +1,45 @@
+// ─── Hero Headline Typography ───────────────────────────────────────────────
+
+.hero-headline {
+  line-height: 1.05;
+}
+
+// "Empowering" — clean solid white
+.hero-static-line {
+  display: block;
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
+
+// Cycling word — warm gold/amber gradient, premium & cohesive on dark navy
+.hero-typing-line {
+  display: block;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: -0.03em;
+  background: linear-gradient(120deg, #f5c842 0%, #ffad3d 45%, #ff8c42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-height: 1.1em;
+  position: relative;
+}
+
+// Blinking cursor — matches the gold tone
+.hero-cursor {
+  display: inline-block;
+  color: #f5c842;
+  -webkit-text-fill-color: #f5c842;
+  font-weight: 300;
+  margin-left: 3px;
+  animation: cursorBlink 0.85s step-end infinite;
+
+  &.blink {
+    animation: cursorBlink 0.5s step-end infinite;
+  }
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

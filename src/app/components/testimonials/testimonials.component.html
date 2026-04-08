@@ -1,77 +1,263 @@
-<!-- 7. Testimonials -->
-<section class="py-24 bg-[#FDF0F8]">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-on-primary-container font-headline font-black text-xl mb-4 tracking-widest uppercase">Voice
-                of Students</h2>
-            <h3 class="text-4xl font-headline font-extrabold text-secondary">Success Stories from Our Alumni</h3>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-xl shadow-on-primary-container/5 relative">
-                <span
-                    class="material-symbols-outlined text-on-primary-container/10 text-8xl absolute top-4 right-4">format_quote</span>
-                <div class="flex text-tertiary mb-6">
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                </div>
-                <p class="text-on-surface-variant mb-8 italic">"Shourya Academy provided me the perfect environment for
-                    my Board exams. The faculty is extremely supportive and the mock tests were a game changer."</p>
-                <div class="flex items-center gap-4">
-                    <img alt="Student Avatar" class="w-12 h-12 rounded-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9xwxwuAwigY2YZwjcEsNR0ZCBh7sDT8UoLyOx8jN5P8G0avII24F5Vrsg4GkYhL2ElQO1xAtkOQSRttciiR6IniXeaCxPRbROjXBtEmPMjaFEOnAoSY_hUxH3Qo3gayONyV0MYGnW22FJip7998lzmLY9F2Tn-XJ4hQZJDSJ7KXoas5w7yrJleWGyLawotbLVR4FbqU0U5k-GuX0lC_erLjy8H0v25CoBMsfRrdvNAXZEU5GINWzCO0OVZ2Z61UemIXcF4Nj5d-11" />
-                    <div>
-                        <h5 class="font-headline font-bold text-secondary">Sneha Agrawal</h5>
-                        <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Class 12 Topper
-                        </p>
+<!-- 7. Testimonials — Infinite Auto-Scroll Marquee -->
+<section class="py-24 bg-[#FDF0F8] overflow-hidden">
+    <div class="text-center mb-14 px-6">
+        <span class="text-on-primary-container font-headline font-black text-sm tracking-[0.25em] uppercase mb-3 block">Voice of Students</span>
+        <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-secondary">Success Stories from Our Alumni</h2>
+    </div>
+
+    <!-- Row 1 — scrolls LEFT -->
+    <div class="relative mb-6">
+        <!-- Fade masks -->
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FDF0F8] to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FDF0F8] to-transparent z-10 pointer-events-none"></div>
+
+        <div class="flex gap-6 testimonial-track-left">
+            <!-- Cards × 2 for seamless loop -->
+            <ng-container *ngFor="let _ of [1,2]">
+
+                <!-- Card A -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"Shourya Academy gave me the perfect environment for my Board exams. Faculty is extremely supportive and the mock tests were a game changer."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9xwxwuAwigY2YZwjcEsNR0ZCBh7sDT8UoLyOx8jN5P8G0avII24F5Vrsg4GkYhL2ElQO1xAtkOQSRttciiR6IniXeaCxPRbROjXBtEmPMjaFEOnAoSY_hUxH3Qo3gayONyV0MYGnW22FJip7998lzmLY9F2Tn-XJ4hQZJDSJ7KXoas5w7yrJleWGyLawotbLVR4FbqU0U5k-GuX0lC_erLjy8H0v25CoBMsfRrdvNAXZEU5GINWzCO0OVZ2Z61UemIXcF4Nj5d-11" alt="Sneha Agrawal" class="w-11 h-11 rounded-full object-cover">
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Sneha Agrawal</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Class 12 Topper</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-xl shadow-on-primary-container/5 relative">
-                <span
-                    class="material-symbols-outlined text-on-primary-container/10 text-8xl absolute top-4 right-4">format_quote</span>
-                <div class="flex text-tertiary mb-6">
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                </div>
-                <p class="text-on-surface-variant mb-8 italic">"The best place for PSC preparation. The deep concept
-                    analysis and regular answer writing practice at Shourya made all the difference."</p>
-                <div class="flex items-center gap-4">
-                    <img alt="Student Avatar" class="w-12 h-12 rounded-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwJKW5SSUpoVeq9uz02AKr7cdR3PWCZrSWJ0db92yVAloGXSx8I5SX1PKlVVtheiVfxtVVRPnLBraBEWs37g5DCFbB2sDNsrkF-Ux5KxSacs1f9DC3oAKk5ukX0BM3Xd6HzUhPs77P64XJ5xj8j-z58S2iVueUFqNOVkPpGhecZ2xn1eUmz1iASdosjldfimNq8jZH7pELuFhzdWX1I4_aIgkhqQcU9rcscs_67UZ-nnJm7rfXmiGkP3jrEZQp0adep9PSQd09FEgC" />
-                    <div>
-                        <h5 class="font-headline font-bold text-secondary">Vikas Sahu</h5>
-                        <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">CGPSC Selected
-                        </p>
+
+                <!-- Card B -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"The best place for PSC preparation. The deep concept analysis and regular answer writing practice at Shourya made all the difference."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwJKW5SSUpoVeq9uz02AKr7cdR3PWCZrSWJ0db92yVAloGXSx8I5SX1PKlVVtheiVfxtVVRPnLBraBEWs37g5DCFbB2sDNsrkF-Ux5KxSacs1f9DC3oAKk5ukX0BM3Xd6HzUhPs77P64XJ5xj8j-z58S2iVueUFqNOVkPpGhecZ2xn1eUmz1iASdosjldfimNq8jZH7pELuFhzdWX1I4_aIgkhqQcU9rcscs_67UZ-nnJm7rfXmiGkP3jrEZQp0adep9PSQd09FEgC" alt="Vikas Sahu" class="w-11 h-11 rounded-full object-cover">
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Vikas Sahu</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">CGPSC Selected</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-xl shadow-on-primary-container/5 relative">
-                <span
-                    class="material-symbols-outlined text-on-primary-container/10 text-8xl absolute top-4 right-4">format_quote</span>
-                <div class="flex text-tertiary mb-6">
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                </div>
-                <p class="text-on-surface-variant mb-8 italic">"Enrolled for Civil Judge coaching and found the
-                    mentorship here exceptional. Highly recommended for law aspirants."</p>
-                <div class="flex items-center gap-4">
-                    <img alt="Student Avatar" class="w-12 h-12 rounded-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzrpjHTnsFbUBaTvLynmPkcs7NWO1MT_EPXsRFKZwjgPJBGXQmj5Y7odCz44ckmj0oq8-VY3EK2twtQMNAmu8Y4ZqD3XUROSyrXtCGRnWPCvntWr-0o7lHRJslWBCf34OLL7MBXCNIBvg5Y5m3PV3V0Gv0hU3gGcdT49hTDtpk9_nFrFafQ1MBXUfmYzsDeT--KRMiWYz0V0wHCSPQ4jxA1z0cFYSG9mxh1gkLkNwMeaJbrSei9myfPRn0S8zGAGx_m9Ewc9_3FU-J" />
-                    <div>
-                        <h5 class="font-headline font-bold text-secondary">Megha Tiwari</h5>
-                        <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Law Aspirant</p>
+
+                <!-- Card C -->
+                <div class="testimonial-card bg-secondary rounded-2xl p-6 shadow-lg relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-white/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-white/80 text-sm italic mb-6 leading-relaxed">"Enrolled for Civil Judge coaching and found the mentorship here exceptional. Highly recommended for all law aspirants."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzrpjHTnsFbUBaTvLynmPkcs7NWO1MT_EPXsRFKZwjgPJBGXQmj5Y7odCz44ckmj0oq8-VY3EK2twtQMNAmu8Y4ZqD3XUROSyrXtCGRnWPCvntWr-0o7lHRJslWBCf34OLL7MBXCNIBvg5Y5m3PV3V0Gv0hU3gGcdT49hTDtpk9_nFrFafQ1MBXUfmYzsDeT--KRMiWYz0V0wHCSPQ4jxA1z0cFYSG9mxh1gkLkNwMeaJbrSei9myfPRn0S8zGAGx_m9Ewc9_3FU-J" alt="Megha Tiwari" class="w-11 h-11 rounded-full object-cover">
+                        <div>
+                            <h5 class="font-headline font-bold text-white text-sm">Megha Tiwari</h5>
+                            <p class="text-xs text-white/60 font-bold uppercase tracking-widest">Law Aspirant</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Card D -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"Cracked Navodaya in the first attempt thanks to Shourya Academy. The practice material and test series are outstanding."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-on-primary-container to-primary flex items-center justify-center text-white font-bold text-lg flex-shrink-0">R</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Rahul Yadav</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Navodaya Selected</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card E -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"Shourya Academy's ADPO batch is incredible. The strategic preparation approach helped me clear the exam in one shot."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-tertiary to-[#d97706] flex items-center justify-center text-white font-bold text-lg flex-shrink-0">P</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Priya Verma</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">ADPO Selected</p>
+                        </div>
+                    </div>
+                </div>
+
+            </ng-container>
         </div>
     </div>
+
+    <!-- Row 2 — scrolls RIGHT (opposite direction) -->
+    <div class="relative">
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FDF0F8] to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FDF0F8] to-transparent z-10 pointer-events-none"></div>
+
+        <div class="flex gap-6 testimonial-track-right">
+            <ng-container *ngFor="let _ of [1,2]">
+
+                <!-- Card F -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"Best coaching institute in Bilaspur. I secured Rank 3 in Sainik School entrance. The discipline here is unmatched."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#8c0057] to-[#ff5bb0] flex items-center justify-center text-white font-bold text-lg flex-shrink-0">A</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Arjun Sharma</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Sainik School Rank 3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card G -->
+                <div class="testimonial-card bg-secondary rounded-2xl p-6 shadow-lg relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-white/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-white/80 text-sm italic mb-6 leading-relaxed">"The teachers genuinely care about each student's progress. My CBSE score improved by 22% in just one year."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">K</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-white text-sm">Kavya Dubey</h5>
+                            <p class="text-xs text-white/60 font-bold uppercase tracking-widest">Class 10 Topper</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card H -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"I joined for VYAPAM and got selected in my first attempt. The study material and revision classes are top-notch."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-on-primary-container to-primary flex items-center justify-center text-white font-bold text-lg flex-shrink-0">S</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Sunita Patel</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">VYAPAM Selected</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card I -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"The online + offline hybrid model at Shourya gave me the flexibility I needed while preparing for the Civil Services."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-tertiary to-[#d97706] flex items-center justify-center text-white font-bold text-lg flex-shrink-0">M</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Mohit Chandrakar</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Civil Services Aspirant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card J -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg shadow-on-primary-container/5 relative flex-shrink-0 w-[340px]">
+                    <span class="material-symbols-outlined text-on-primary-container/10 text-7xl absolute top-3 right-4">format_quote</span>
+                    <div class="flex text-tertiary mb-4 gap-0.5">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm italic mb-6 leading-relaxed">"Scored 95% in Class 12 Boards. Shourya Academy's regular mock tests and detailed analysis made me confident."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#8c0057] to-[#ff5bb0] flex items-center justify-center text-white font-bold text-lg flex-shrink-0">N</div>
+                        <div>
+                            <h5 class="font-headline font-bold text-secondary text-sm">Nisha Gupta</h5>
+                            <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">95% in Class 12</p>
+                        </div>
+                    </div>
+                </div>
+
+            </ng-container>
+        </div>
+    </div>
+
+    <style>
+        .testimonial-track-left {
+            animation: scrollLeft 40s linear infinite;
+            width: max-content;
+        }
+        .testimonial-track-right {
+            animation: scrollRight 40s linear infinite;
+            width: max-content;
+        }
+        .testimonial-track-left:hover,
+        .testimonial-track-right:hover {
+            animation-play-state: paused;
+        }
+        @keyframes scrollLeft {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes scrollRight {
+            0%   { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
 </section>

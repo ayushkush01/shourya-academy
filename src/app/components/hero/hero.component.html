@@ -1,5 +1,5 @@
 <!-- 2. Hero Section -->
-<section class="relative pt-32 pb-20 bg-secondary overflow-hidden min-h-[921px] flex items-center">
+<section class="relative pt-32 pb-20 bg-secondary overflow-x-clip min-h-[921px] flex items-center">
     <!-- Announcement Marquee Bar -->
     <div
         class="absolute top-[76px] md:top-[100px] left-0 w-full bg-white/5 backdrop-blur-sm border-y border-white/10 py-3 z-40 overflow-hidden flex items-center shadow-md">
@@ -33,14 +33,17 @@
             <polygon points="100,0 100,100 0,100"></polygon>
         </svg>
     </div>
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
+    <div class="max-w-[1400px] w-full mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
         style="margin-bottom: 80px;">
         <div>
             <span
                 class="inline-block py-1 px-4 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-sm tracking-wide mb-6">TRUSTED
                 BY 500+ STUDENTS</span>
-            <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-[1.1] tracking-tight mb-6">
-                Building <span class="text-on-primary-container">Toppers</span> <br />Since 2017
+            <h1 class="hero-headline font-headline font-extrabold leading-[1.05] tracking-tight mb-6">
+                <span class="hero-static-line">Empowering</span>
+                <br />
+                <span class="hero-typing-line" aria-live="polite">{{ currentWord }}<span class="hero-cursor"
+                        [class.blink]="isCursorBlinking">|</span></span>
             </h1>
             <p class="text-xl text-secondary-fixed opacity-90 mb-10 max-w-lg leading-relaxed">
                 <!-- Comprehensive coaching for Classes 6-12 (CG/CBSE), Navodaya, Sainik School, and Competitive Exams. Shape
@@ -51,15 +54,17 @@
             </p>
             <div class="flex flex-wrap gap-4">
                 <a href="#contact"
-                    class="inline-block bg-gradient-magenta text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-on-primary-container/20 transition-all">Enroll
-                    Now</a>
+                    class="inline-flex items-center gap-2 bg-gradient-magenta text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-on-primary-container/20 transition-all group">
+                    Enroll Now
+                    <span class="material-symbols-outlined text-xl group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200">north_east</span>
+                </a>
                 <a href="#results"
                     class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-white/10 transition-all flex items-center gap-2">
                     View Results <span class="material-symbols-outlined">trending_up</span>
                 </a>
             </div>
         </div>
-        <div class="relative w-full h-[500px] flex items-center justify-center lg:justify-end">
+        <div class="relative w-full flex items-center justify-center lg:justify-end py-8">
             <!-- Decorative abstract background (Glowing Orbs) -->
             <div
                 class="absolute right-[10%] top-[10%] w-64 h-64 bg-primary-container rounded-full mix-blend-screen filter blur-[80px] opacity-60 animate-pulse pointer-events-none">
@@ -67,12 +72,12 @@
             <div class="absolute right-[30%] bottom-[10%] w-56 h-56 bg-tertiary rounded-full mix-blend-screen filter blur-[80px] opacity-40 animate-pulse pointer-events-none"
                 style="animation-delay: 2s;"></div>
 
-            <!-- Clean, stacked modern cards -->
-            <div class="relative z-20 w-full max-w-md flex flex-col gap-5 pl-4 lg:pl-0">
+            <!-- Clean, stacked modern cards (staircase stepped layout) -->
+            <div class="relative z-20 w-full max-w-lg flex flex-col gap-5">
 
                 <!-- Card 1 -->
                 <div
-                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:-translate-x-8">
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden ml-0">
                     <!-- Glass Shine Effect -->
                     <div
                         class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
@@ -95,7 +100,7 @@
 
                 <!-- Card 2 -->
                 <div
-                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:translate-x-4">
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden ml-8">
                     <div
                         class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
                     </div>
@@ -117,7 +122,7 @@
 
                 <!-- Card 3 -->
                 <div
-                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:translate-x-16">
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden ml-16">
                     <div
                         class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
                     </div>
@@ -139,7 +144,7 @@
 
                 <!-- Card 4 (Stats) -->
                 <div
-                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden transform lg:translate-x-28">
+                    class="group relative bg-white/10 backdrop-blur-xl border border-[rgba(275,275,275,0.2)] rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-white/20 hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden ml-24">
                     <div
                         class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1.5s_infinite]">
                     </div>
@@ -184,7 +189,7 @@
     <!-- Stats Strip -->
     <div class="absolute bottom-0 w-full py-6 bg-primary/40 backdrop-blur-sm border-t border-white/5">
         <div
-            class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white/80 font-headline font-semibold text-sm md:text-base">
+            class="w-full px-12 flex justify-between items-center text-white/80 font-headline font-semibold text-sm md:text-base">
             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-primary-container"></span>
                 500+ Students</span>
             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> 8+ Years
