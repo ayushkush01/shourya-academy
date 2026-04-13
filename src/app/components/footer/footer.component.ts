@@ -40,6 +40,19 @@ export class FooterComponent {
     this.selectedBranchIndex = index;
   }
 
+  // Modal state: 'privacy' | 'terms' | null
+  activeModal: 'privacy' | 'terms' | null = null;
+
+  openModal(type: 'privacy' | 'terms') {
+    this.activeModal = type;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeModal() {
+    this.activeModal = null;
+    document.body.style.overflow = '';
+  }
+
   constructor(private sanitizer: DomSanitizer) { }
 
   formData = {
